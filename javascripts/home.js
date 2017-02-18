@@ -1,3 +1,5 @@
+"use strict";
+
 var homeLink = document.getElementById("link-home");
 var homeView = document.getElementById("home-view");
 
