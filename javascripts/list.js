@@ -1,3 +1,5 @@
+"use strict";
+
 var listLink = document.getElementById("link-list");
 var listView = document.getElementById("list-view");
 
