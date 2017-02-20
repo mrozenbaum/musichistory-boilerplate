@@ -1,30 +1,5 @@
  # Music History Part 1:
 
-This is the project that you will be working for your individual work throughout the entire front end course. Don't worry, you'll be building lots of other applications, but when you learn a new technique, library or language, you'll be cutting your teeth with it on Music History.
-
-I've started you off with a very basic HTML document, the `index.html` file. This file name is the default file that most any web server looks for in the directory in which is was started. This is why you don't have to type in `www.google.com/index.html`. If the file exists, the web server sends it back to you if you just request the root URL.
-
-> **Terminology:** Root URL simply means your domain name (or IP address) with no other documents, or folders specified. `www.google.com` is the root URL of Google's web site, but `www.google.com/finance` is not.
-
-## Your first Fork & Clone
-
-You're going to get a copy of this Github repository downloaded - a.k.a. cloned - to your machine using the `git` command. Here's how to do it.
-
-1. Look all the way up and to the right of this screen and you'll see a button with the word **Fork** on it. Click that button,
-2. What you've just done is taken a copy of *my* repository and all the code inside it, and copied into your Github account. You can now do whatever you like to your fork of my repository and it won't affect mine at all.
-3. Now on the top of the page, you will see the text **HTTPS** with a text box next to it. Make sure that HTTPS is selected.
-4. Click the little clipboard icon to the right and it copies that URL to your computer's clipboard.
-5. Open your terminal window and navigate to your workspace folder.
-6. Type in `git clone ` and then paste the URL after that text. You should see
-   `git clone https://github.com/{your account name here}/musichistory-boilerplate.git musichistory`
-1. Hit your enter key and git will do two things. First, it creates a `musichistory` sub-directory under `/workspace` and then downloads all the code into that directory.
-1. Now `ls musichistory`.
-1. You will see the lonely `index.html` file sitting in there.
-
-Congratulations, you've just cloned your first Github repository!
-
-Now here's your assignment.
-
 ## Individual Assignment
 
 You will be building the basic structure of your Music History application in HTML and making it look good with the skills you learned in CSS.
@@ -38,20 +13,12 @@ Visit the [Music History mockup](https://moqups.com/chortlehoort/1E8LJX7r/) that
 1. The links in the navigation bar don't need to link to anything just yet, you can use `<a href="#">View music</a>` for now
 1. Pick your four favorite songs from the artists you have chosen and use the information for each in the list that's on the right-hand side. You can use `h1` tags, `div` tags, `section` tags... whatever you like.
 
-## Completing
-
-Once you are done, make sure you add your files to git, make a commit, and then push your new code up to Github with the following command `git push origin master`.
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 Music History Part 2
 
 Setup
 
-Create a branch in your musichistory repository named version2.
-Switch to that branch.
 Requirements
 
 Use JavaScript arrays, loops, and innerHTML to show the music you love.
@@ -68,47 +35,52 @@ Merging your branch
 
 After you've got all of the requirements completed, follow these steps.
 
-In your musichistory directory, enter the command git checkout master. This switches you back to the master branch.
-git merge -X theirs version2
-If you see a vim screen with a default message in it just :x to save and exit.
-Your branch is now merged into the master branch and you can push the master branch up to Github with git push origin master.
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 Music History Part 3
 
 Instructions
 
-Time to make Music History into a single page application. Before you begin please review the sample code I provided in JavaScript 103 about building a simple SPA.
-
 In the navigation bar, make sure you have two links labeled "List Music", and "Add Music".
+
 Add a DOM element that contains some input fields for the user to enter in the name of a song, the artist for the song, and the album. You do not need to enclose them in a <form> element because we're not actually submitting this form anywhere.
+
 Add a <button> element at the bottom of the input fields labeled "Add".
 The input fields and the add button make up the Add Music View.
-The existing view - the combination of the filter form and the song list - will be referred to as the List Music View.
-The Add Music View should not appear when the user first visits your page. The song list with the corresponding filter form should be visible.
-When the user clicks on "Add Music" in the navigation bar, the List Music View should be hidden, and the Add Music View should be shown (see example wireframe).
-When the user clicks on "List Music" in the navigation bar, the Add Music View should be hidden, and the List Music View should be shown (see example wireframe).
-Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM.
-Merging
 
-Remember to merge the version-3 branch back into master when you're done.
+The existing view - the combination of the filter form and the song list - will be referred to as the List Music View.
+
+The Add Music View should not appear when the user first visits your page. The song list with the corresponding filter form should be visible.
+
+When the user clicks on "Add Music" in the navigation bar, the List Music View should be hidden, and the Add Music View should be shown (see example wireframe).
+
+When the user clicks on "List Music" in the navigation bar, the Add Music View should be hidden, and the List Music View should be shown (see example wireframe).
+
+Once the user fills out the song form and clicks the add button, you should collect all values from the input fields, add the song to your array of songs, and update the song list in the DOM.
 
 ///////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////
 
  Music History Part 4:
 
-
-Part One
+Part One:
 
 Read from local JSON file with an XHR.
 Loop over results and inject into Music History list view.
 Add delete button DOM to each row and, when it is clicked, delete the entire row in the DOM.
-Part Two
+
+Part Two:
 
 Take your music and split it into two JSON file instead of them all living on one file.
 Add a button at the bottom of your music list and label it "More >".
 Load the songs from the first list and inject the DOM into the document as you've already done.
 When the user clicks that button, load the songs from the second JSON file and append them to the bottom of the existing music, but before the More button.
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+
+Music History Part 5
+
+Instructions:
+
+Implement jQuery in your Music History code. Every innerHTML, getElementById, getElementByClassName, event listener and XHR request. Convert 'em all.

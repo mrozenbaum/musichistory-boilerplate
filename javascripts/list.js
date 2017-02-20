@@ -1,13 +1,21 @@
 "use strict";
 
-var listLink = document.getElementById("link-list");
-var listView = document.getElementById("list-view");
+// Functions for links in nav bar
+$(document).ready(function(){
 
-listLink.addEventListener("click", function(event) {
-  event.preventDefault();
-  homeView.classList.add("hidden");
-  addView.classList.add("hidden");
+  var listLink = $("#link-list");
+  var listView = $("#list-view");
+  var addLink = $("#link-add");
+  var addView = $("#add-view"); 
+  // LIST MUSIC VIEW
+  listLink.click(function(event){
+    listView.removeClass("hidden");
+    addView.addClass("hidden");
+  });
+  // ADD MUSIC FORM
+  addLink.click(function(event){
+    listView.addClass("hidden");
+    addView.removeClass("hidden");
+  });
 
-  listView.classList.add("visible");
-  listView.classList.remove("hidden");
 });
